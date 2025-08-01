@@ -20,7 +20,7 @@ class _ArrowButtonState extends State<ArrowButton> {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           gradient: LinearGradient(
-            colors: [AppColors.pirmaryColor, AppColors.secondryColor],
+            colors: [AppColors.primaryColor, AppColors.secondaryColor],
           ),
         ),
         child: InkWell(

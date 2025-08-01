@@ -41,7 +41,7 @@ class OnBoarding2 extends StatelessWidget {
                                 style: Theme.of(
                                   context,
                                 ).textTheme.displayMedium!.copyWith(
-                                  color: AppColors.pirmaryColor,
+                                  color: AppColors.primaryColor,
                                   fontFamily: FontFamily.cherrySwashBold,
                                 ),
                               ),
@@ -56,7 +56,7 @@ class OnBoarding2 extends StatelessWidget {
                               TextSpan(
                                 text: " Room Finder",
                                 style: textTheme.displayMedium!.copyWith(
-                                  color: AppColors.pirmaryColor,
+                                  color: AppColors.primaryColor,
                                   fontFamily: FontFamily.cherrySwashBold,
                                 ),
                               ),
@@ -74,11 +74,11 @@ class OnBoarding2 extends StatelessWidget {
                       children: [
                         Text(
                           "Lorem lpsum is simple dummy text of the",
-                          style: textTheme.displaySmall,
+                          style: textTheme.bodyMedium,
                         ),
                         Text(
                           "printing and typesetting industry.",
-                          style: textTheme.displaySmall,
+                          style: textTheme.bodyMedium,
                         ),
                       ],
                     ),
@@ -104,7 +104,7 @@ class OnBoarding2 extends StatelessWidget {
                             decoration:
                                 index == 0
                                     ? BoxDecoration(
-                                      color: AppColors.pirmaryColor,
+                                      color: AppColors.primaryColor,
                                       shape: BoxShape.circle,
                                       boxShadow: [
                                         BoxShadow(
@@ -141,13 +141,15 @@ class OnBoarding2 extends StatelessWidget {
                 Align(
                   alignment: Alignment.centerRight,
                   child: GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      GoRouter.of(context).goNamed(AppRouteConst.signInPage);
+                    },
                     child: Padding(
                       padding: const EdgeInsets.all(20.0),
                       child: Text(
                         "Skip",
                         style: TextStyle(
-                          color: AppColors.pirmaryColor,
+                          color: AppColors.primaryColor,
                           fontWeight: FontWeight.bold,
                         ),
                       ),

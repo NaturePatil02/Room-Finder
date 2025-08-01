@@ -2,25 +2,29 @@ import 'package:flutter/material.dart';
 import 'package:room_finder/util/common/widgets/common_circular_progress_indicator.dart';
 import 'package:room_finder/util/theme/app_colors.dart';
 
-class PrimaryButton extends StatefulWidget {
+class SecondaryButton extends StatefulWidget {
   final GestureTapCallback? callBack;
   final Widget? child;
   final String label;
   final bool isLoading;
+  final Color gbColor;
+  final Color textColor;
 
-  const PrimaryButton({
+  const SecondaryButton({
     super.key,
     this.child,
     required this.callBack,
     required this.label,
     required this.isLoading,
+    this.gbColor = AppColors.primaryColor,
+    this.textColor = Colors.white,
   });
 
   @override
-  State<PrimaryButton> createState() => _PrimaryButtonState();
+  State<SecondaryButton> createState() => _SecondaryButtonState();
 }
 
-class _PrimaryButtonState extends State<PrimaryButton> {
+class _SecondaryButtonState extends State<SecondaryButton> {
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -29,9 +33,7 @@ class _PrimaryButtonState extends State<PrimaryButton> {
       child: Ink(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
-          gradient: LinearGradient(
-            colors: [AppColors.primaryColor, AppColors.secondaryColor],
-          ),
+          color: widget.gbColor,
         ),
         child: InkWell(
           borderRadius: BorderRadius.circular(15),
@@ -49,7 +51,7 @@ class _PrimaryButtonState extends State<PrimaryButton> {
                         widget.label,
                         style: TextStyle(
                           fontSize: 17,
-                          color: AppColors.primaryButtonTextColor,
+                          color: widget.textColor,
                           fontWeight: FontWeight.bold,
                         ),
                       ),

@@ -63,7 +63,7 @@ class _OnBoarding1State extends State<OnBoarding1> {
                               style: Theme.of(
                                 context,
                               ).textTheme.displayLarge!.copyWith(
-                                color: AppColors.pirmaryColor,
+                                color: AppColors.primaryColor,
                                 fontFamily: FontFamily.cherrySwashBold,
                               ),
                             ),

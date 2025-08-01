@@ -37,6 +37,7 @@ dependencies:
   shared_preferences: ^2.5.3
   flutter_bloc: ^9.1.1
   go_router: ^16.0.0
+  icons_launcher: ^3.0.1
 
 dev_dependencies:
   flutter_test:
@@ -64,6 +65,7 @@ flutter:
   assets:
     - assets/images/
     - assets/fonts/
+    - assets/icons/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
@@ -92,6 +94,9 @@ flutter:
     - family: KanitSemiBold
       fonts:
         - asset: assets/fonts/Kanit_SemiBold.ttf
+
+
+
 
   #
   # For details regarding fonts from package dependencies,

@@ -1,5 +1,9 @@
 import 'package:go_router/go_router.dart';
 import 'package:room_finder/app/routes/app_route_const.dart';
+import 'package:room_finder/app/screens/auth/select_role/select_role_page.dart';
+import 'package:room_finder/app/screens/auth/sign_in/sign_in_page.dart';
+import 'package:room_finder/app/screens/auth/sign_up/sign_up_page.dart';
+import 'package:room_finder/app/screens/dashboard/main_navigation_page.dart';
 import 'package:room_finder/app/screens/on_boardring/on_boarding1.dart';
 import 'package:room_finder/app/screens/on_boardring/on_boarding2.dart';
 import 'package:room_finder/app/screens/on_boardring/on_boarding3.dart';
@@ -41,6 +45,34 @@ class AppRoutes {
         name: AppRouteConst.onBoarding4Page,
         builder: (context, state) {
           return OnBoarding4();
+        },
+      ),
+      GoRoute(
+        path: AppRouteConst.mainNavigationPage,
+        name: AppRouteConst.mainNavigationPage,
+        builder: (context, state) {
+          return MainNavigationPage();
+        },
+      ),
+      GoRoute(
+        path: AppRouteConst.signInPage,
+        name: AppRouteConst.signInPage,
+        builder: (context, state) {
+          return SignInPage();
+        },
+      ),
+      GoRoute(
+        path: AppRouteConst.signUpPage,
+        name: AppRouteConst.signUpPage,
+        builder: (context, state) {
+          return SignUpPage();
+        },
+      ),
+      GoRoute(
+        path: AppRouteConst.roleBasedAccessPage,
+        name: AppRouteConst.roleBasedAccessPage,
+        builder: (context, state) {
+          return SelectRolePage();
         },
       ),
       // GoRoute(

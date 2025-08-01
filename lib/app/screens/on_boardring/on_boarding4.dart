@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:room_finder/app/routes/app_route_const.dart';
 import 'package:room_finder/util/common/app_icons.dart';
 import 'package:room_finder/util/common/widgets/arrow_button.dart';
 import 'package:room_finder/util/theme/app_colors.dart';
@@ -37,7 +38,7 @@ class OnBoarding4 extends StatelessWidget {
                         Text(
                           "Property Owner",
                           style: textTheme.displayMedium!.copyWith(
-                            color: AppColors.pirmaryColor,
+                            color: AppColors.primaryColor,
                             fontFamily: FontFamily.cherrySwashBold,
                           ),
                         ),
@@ -52,11 +53,11 @@ class OnBoarding4 extends StatelessWidget {
                       children: [
                         Text(
                           "Lorem lpsum is simple dummy text of the",
-                          style: textTheme.displaySmall,
+                          style: textTheme.bodyMedium,
                         ),
                         Text(
                           "printing and typesetting industry.",
-                          style: textTheme.displaySmall,
+                          style: textTheme.bodyMedium,
                         ),
                       ],
                     ),
@@ -95,7 +96,7 @@ class OnBoarding4 extends StatelessWidget {
                             decoration:
                                 index == 2
                                     ? BoxDecoration(
-                                      color: AppColors.pirmaryColor,
+                                      color: AppColors.primaryColor,
                                       shape: BoxShape.circle,
                                       boxShadow: [
                                         BoxShadow(
@@ -118,7 +119,13 @@ class OnBoarding4 extends StatelessWidget {
                       alignment: Alignment.centerRight,
                       child: Padding(
                         padding: const EdgeInsets.only(right: 20),
-                        child: ArrowButton(callBack: () {}),
+                        child: ArrowButton(
+                          callBack: () {
+                            GoRouter.of(
+                              context,
+                            ).goNamed(AppRouteConst.signInPage);
+                          },
+                        ),
                       ),
                     ),
                   ],
@@ -126,13 +133,15 @@ class OnBoarding4 extends StatelessWidget {
                 Align(
                   alignment: Alignment.centerRight,
                   child: GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      GoRouter.of(context).goNamed(AppRouteConst.signInPage);
+                    },
                     child: Padding(
                       padding: const EdgeInsets.all(20.0),
                       child: Text(
                         "Skip",
                         style: TextStyle(
-                          color: AppColors.pirmaryColor,
+                          color: AppColors.primaryColor,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
