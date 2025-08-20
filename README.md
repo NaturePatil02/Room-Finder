@@ -1,16 +1,37 @@
-# room_finder
+# Room Finder
 
-A new Flutter project.
+Overview: 
+Room Finder is a mobile and web-based application designed to help users easily find rooms, houses, and flats available only for rent. The platform connects room seekers with owners, ensuring a simple, transparent, and user-friendly rental experience.
 
-## Getting Started
+Key Features:
 
-This project is a starting point for a Flutter application.
+🏠 Room Listings: Owners can upload room/house/flat details with images and descriptions.
 
-A few resources to get you started if this is your first Flutter project:
+👀 Room Preview: Users can view uploaded pictures and property details before contacting the owner.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+🔎 Search & Filter: Advanced search with filters such as location, price range, and property type (coming soon).
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+📩 Direct Contact: Tenants can directly connect with owners through the app.
+
+🔔 Notifications: Stay updated with new room postings and owner responses.
+
+🛠 Future Enhancements:
+
+Map-based search
+
+Online rent agreement
+
+Integrated payment system
+
+Rating & review system for tenants and owners
+
+Technology Stack:
+
+Mobile App: Flutter (cross-platform)
+
+Backend: PHP (with MySQL database)
+
+Hosting: Secure cloud-based deployment
+
+Goal:
+To create a one-stop solution for rental needs, making the process of finding and posting rental properties easier, faster, and more reliable.
