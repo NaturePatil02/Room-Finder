@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:room_finder/app/routes/app_route_const.dart';
 import 'package:room_finder/util/common/widgets/label_text_field.dart';
 import 'package:room_finder/util/common/widgets/primary_button.dart';
+import 'package:room_finder/util/constants/string_const.dart';
 import 'package:room_finder/util/theme/app_colors.dart';
 
 class SignUpPage extends StatefulWidget {
@@ -75,7 +76,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         text: TextSpan(
                           children: [
                             TextSpan(
-                              text: "Already have an Account? ",
+                              text: StringConst.alreadyHaveAnAccount,
                               style: textTheme.bodySmall!.copyWith(
                                 color: Colors.white,
                               ),
@@ -146,7 +147,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     context,
                   ).pushNamed(AppRouteConst.roleBasedAccessPage);
                 },
-                label: "Sign Up",
+                label: StringConst.signUp,
                 isLoading: false,
               ),
             ],

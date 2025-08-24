@@ -1,16 +1,28 @@
 import 'package:flutter/material.dart';
-import 'package:room_finder/util/common/app_icons.dart';
+import 'package:room_finder/util/constants/app_icons.dart';
 import 'package:room_finder/util/common/widgets/secondary_button.dart';
+import 'package:room_finder/util/constants/string_const.dart';
 import 'package:room_finder/util/theme/app_colors.dart';
 import 'package:room_finder/util/theme/font_family.dart';
 
-class SelectRolePage extends StatelessWidget {
+class SelectRolePage extends StatefulWidget {
   const SelectRolePage({super.key});
+
+  @override
+  State<SelectRolePage> createState() => _SelectRolePageState();
+}
+
+class _SelectRolePageState extends State<SelectRolePage> {
+  int selectedRoleIndex = -1;
 
   @override
   Widget build(BuildContext context) {
     var textTheme = Theme.of(context).textTheme;
     return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        backgroundColor: AppColors.primaryColor,
+      ),
       body: Container(
         width: double.infinity,
         decoration: BoxDecoration(
@@ -50,7 +62,7 @@ class SelectRolePage extends StatelessWidget {
 
                 SecondaryButton(
                   callBack: () {},
-                  label: "Next",
+                  label: StringConst.next,
                   isLoading: false,
                 ),
               ],

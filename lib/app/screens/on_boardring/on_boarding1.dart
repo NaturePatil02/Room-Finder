@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:go_router/go_router.dart';
 import 'package:room_finder/app/routes/app_route_const.dart';
-import 'package:room_finder/util/common/app_icons.dart';
+import 'package:room_finder/util/constants/app_icons.dart';
 import 'package:room_finder/util/common/widgets/primary_button.dart';
+import 'package:room_finder/util/constants/string_const.dart';
 import 'package:room_finder/util/theme/app_colors.dart';
 import 'package:room_finder/util/theme/font_family.dart';
 
@@ -81,9 +82,9 @@ class _OnBoarding1State extends State<OnBoarding1> {
                     callBack: () {
                       GoRouter.of(
                         context,
-                      ).replaceNamed(AppRouteConst.onBoarding2Page);
+                      ).replaceNamed(AppRouteConst.onBoardingMainPage);
                     },
-                    label: "Get Started",
+                    label: StringConst.exploreNow,
                     isLoading: false,
                   ),
                 ],

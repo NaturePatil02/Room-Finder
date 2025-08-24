@@ -8,5 +8,5 @@ class AppIcons {
   // static const String onBoarding2Image = "assets/icons/on_boarding2_image.png";
   // static const String onBoarding2Image = "assets/icons/on_boarding2_image.png";
 
-  // static const String house4 = "assets/images/house4.jpg";
+  static const String appIcons = "assets/icons/app_icon.png";
 }

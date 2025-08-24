@@ -38,6 +38,9 @@ dependencies:
   flutter_bloc: ^9.1.1
   go_router: ^16.0.0
   icons_launcher: ^3.0.1
+  bloc: ^9.0.0
+  equatable: ^2.0.7
+  flutter_native_splash: ^2.4.6
 
 dev_dependencies:
   flutter_test:
@@ -98,6 +101,17 @@ flutter:
 
 
 
-  #
-  # For details regarding fonts from package dependencies,
-  # see https://flutter.dev/to/font-from-package
+
+icons_launcher:
+  image_path: "assets/icons/app_icon.png"
+  platforms:
+    android:
+      enable: true
+    ios:
+      enable: true
+
+flutter_native_splash:
+  color: "#ffffff"       # background color
+  image: "assets/icons/app_icon.png" # your splash image (keep it simple, center logo)
+  android: true
+  ios: true
