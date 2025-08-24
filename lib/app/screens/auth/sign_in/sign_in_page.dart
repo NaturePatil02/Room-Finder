@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:room_finder/app/routes/app_route_const.dart';
 import 'package:room_finder/util/common/widgets/label_text_field.dart';
 import 'package:room_finder/util/common/widgets/primary_button.dart';
+import 'package:room_finder/util/constants/string_const.dart';
 import 'package:room_finder/util/theme/app_colors.dart';
 
 class SignInPage extends StatefulWidget {
@@ -46,7 +47,7 @@ class _SignInPageState extends State<SignInPage> {
                   children: [
                     Icon(Icons.login, size: 40, color: Colors.white),
                     Text(
-                      "Welcome Back..",
+                      StringConst.welcomeBack,
                       style: textTheme.displayMedium!.copyWith(
                         color: Colors.white,
                       ),
@@ -68,7 +69,7 @@ class _SignInPageState extends State<SignInPage> {
                         text: TextSpan(
                           children: [
                             TextSpan(
-                              text: "Don't have an Account? ",
+                              text: StringConst.dontHaveAnAccount,
                               style: textTheme.bodySmall!.copyWith(
                                 color: Colors.white,
                               ),
@@ -117,7 +118,11 @@ class _SignInPageState extends State<SignInPage> {
               controller: _passwordController,
             ),
             SizedBox(height: 30),
-            PrimaryButton(callBack: () {}, label: "Login", isLoading: false),
+            PrimaryButton(
+              callBack: () {},
+              label: StringConst.login,
+              isLoading: false,
+            ),
           ],
         ),
       ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:room_finder/util/theme/app_colors.dart';
+import 'package:room_finder/util/theme/font_family.dart';
 
 class LabelTextField extends StatelessWidget {
   final String label;
@@ -25,7 +26,14 @@ class LabelTextField extends StatelessWidget {
             ),
           ),
           SizedBox(height: 5),
-          TextFormField(decoration: InputDecoration(hintText: hintText)),
+          TextFormField(
+            decoration: InputDecoration(hintText: hintText),
+            style: TextStyle(
+              fontSize: 16,
+              color: AppColors.primaryTextColorLight,
+              fontFamily: FontFamily.kanitRegular,
+            ),
+          ),
         ],
       ),
     );

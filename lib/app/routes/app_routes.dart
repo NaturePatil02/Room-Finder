@@ -5,9 +5,7 @@ import 'package:room_finder/app/screens/auth/sign_in/sign_in_page.dart';
 import 'package:room_finder/app/screens/auth/sign_up/sign_up_page.dart';
 import 'package:room_finder/app/screens/dashboard/main_navigation_page.dart';
 import 'package:room_finder/app/screens/on_boardring/on_boarding1.dart';
-import 'package:room_finder/app/screens/on_boardring/on_boarding2.dart';
-import 'package:room_finder/app/screens/on_boardring/on_boarding3.dart';
-import 'package:room_finder/app/screens/on_boardring/on_boarding4.dart';
+import 'package:room_finder/app/screens/on_boardring/on_boarding_page.dart';
 
 class AppRoutes {
   static GoRouter appRoutes = GoRouter(
@@ -27,26 +25,13 @@ class AppRoutes {
         },
       ),
       GoRoute(
-        path: AppRouteConst.onBoarding2Page,
-        name: AppRouteConst.onBoarding2Page,
+        path: AppRouteConst.onBoardingMainPage,
+        name: AppRouteConst.onBoardingMainPage,
         builder: (context, state) {
-          return OnBoarding2();
+          return OnBoardingPage();
         },
       ),
-      GoRoute(
-        path: AppRouteConst.onBoarding3Page,
-        name: AppRouteConst.onBoarding3Page,
-        builder: (context, state) {
-          return OnBoarding3();
-        },
-      ),
-      GoRoute(
-        path: AppRouteConst.onBoarding4Page,
-        name: AppRouteConst.onBoarding4Page,
-        builder: (context, state) {
-          return OnBoarding4();
-        },
-      ),
+
       GoRoute(
         path: AppRouteConst.mainNavigationPage,
         name: AppRouteConst.mainNavigationPage,
